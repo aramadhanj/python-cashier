@@ -8,12 +8,14 @@ Sebuah sistem kasir dengan fitur berikut:
 3. Mengedit nama, jumlah, atau harga item
 4. Menampilkan daftar item belanja
 5. Menghitung total harga sebelum dan sesudah diskon.
+
 ## Feature Requirements
 1. Customer dapat menambahkan nama, jumlah, dan harga yang ingin dibeli dengan method `add_item()`
 2. Customer dapat mengubah nama, jumlah, atau harga item yang ingin dibeli dengan method `update_item_name()`, `update_item_qty()`, atau `update_item_price()`.
 3. Customer dapat menghapus salah satu item belanja dengan method `delete_item()` atau menghapus seluruh item dengan method `reset_transaction()`.
 4. Customer dapat mengecek pesanan dengan method `check_order()`.
 5. Customer dapat menghitung total belanja dengan method `total_price()`.
+
 ## Cara menggunakan program dan alur Program
 1. Download file `Cashier.ipynb` dan `supermarket.py`
 2. Import file `supermarket.py` ke dalam `Cashier.ipynb` dengan cara `from supermarket import Cashier`
@@ -31,6 +33,45 @@ Sebuah sistem kasir dengan fitur berikut:
 * Pilihan 7 : Customer mencetak total harga belanjaan
 * Pilihan 8 : Customer menghapus seluruh item yang ada pada daftar belanja
 * Pilihan 9 : Exit. Pemrograman berhenti
+
+## Penjelasan Code
+
+Program self-service cashier terdapat dua file program, Cashier.ipyb dan supermarket.py.
+
+File `supermarket.py` berisikan modul Cashier yang diimport oleh file Cashier.ipynb. Pada file supermarket.py terdapat beberapa method, diantaranya adalah:
+
+1. `add_item()`. Untuk menambahkan nama, qty, dan harga item.
+
+![image](https://user-images.githubusercontent.com/61931377/232299314-8684ffb6-4b62-4538-a7a1-7478f9515c8e.png)
+
+2. `update_item_qty()`. Untuk mengubah qty item yang ingin dibeli.
+
+![image](https://user-images.githubusercontent.com/61931377/232299428-74a778ad-704f-4b18-8901-c78ab020f85c.png)
+
+3. `update_item_name()`. Untuk mengubah nama item yang ingin dibeli.
+
+![image](https://user-images.githubusercontent.com/61931377/232299683-da4d6cbf-09a1-4b65-a71c-ba5acb9664ab.png)
+
+4. `update_item_price()`. Untuk mengubah harga item yang ingin dibeli.
+
+![image](https://user-images.githubusercontent.com/61931377/232299733-6678ab18-6e50-4819-8064-4c8d14de684e.png)
+
+5. `delete_item()`. Untuk menghapus salah satu item pada daftar transaksi.
+
+![image](https://user-images.githubusercontent.com/61931377/232299774-9922485d-e8c0-42b7-aaae-d1f633883420.png)
+
+6. `reset_transaction()`. Untuk menghapus seluruh item pada daftar transaksi.
+
+![image](https://user-images.githubusercontent.com/61931377/232299811-a4346218-5963-4de2-857e-135fc71627d7.png)
+
+7. `check_order()`. Untuk mencetak seluruh pesanan/ daftar transaksi.
+
+![image](https://user-images.githubusercontent.com/61931377/232299843-48afc95a-2843-40f5-8849-44bd3076a057.png)
+
+8. `total_price()`. Untuk mencetak total harga belanja.
+
+![image](https://user-images.githubusercontent.com/61931377/232299881-6506d113-ae1c-45d7-9933-c042975524a1.png)
+
 
 ## Hasil Test Case
 1. Test 1
